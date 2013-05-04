@@ -2,7 +2,7 @@ class ContactUs::Contact
   include ActiveModel::Conversion
   include ActiveModel::Validations
 
-  include Humanizer       
+  include ::Humanizer       
   require_human_on :create
 
   attr_accessor :email, :message, :name, :subject
